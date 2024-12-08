@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#banner {
+    position: relative;
+    overflow: hidden;
+    background: url(../Logo/img/landingpage.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+nav  {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar .navlist {
+    flex: 1;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.navlist li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navlist a {
+    color: #facc15;
+    margin-right: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #fafafa;
+    transition: .3s;
+}
+
+.navbar {
+    background-color: #281313;
+    opacity: 0.95;
+    padding: 10px 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.navbar .logo-text {
+    color: #facc15;
+    font-size: 12px;
+    margin-right: auto;
+}
+
+nav .logo-text strong {
+    font-size: 18px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+    color: #fafafa;
+}
+
+.banner-text h1 {
+    font-size: 60px;
+}
+
+.banner-text p {
+    font-size: 17px;
+    color: #facc15;
+}
+
+.banner-btn {
+    margin: 70px auto 0;
+}
+
+.banner-btn a {
+    width: 500px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #281313;
+    background-color: #facc15;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+}
+
+.banner-btn a:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+.navbar button {
+    display: block;
+    background-color: #facc15;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    margin-right: 5px;
+    margin-left: auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+button a {
+    color: #281313;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menuBtn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    right: -10px;
+    top: 7px;
+    border-radius: 3px;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.menuBtn img {
+    display: none;
+    width: 20px;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* DROPDOWN MENU */
+.dropdownMenu {
+    display: none;
+    position: fixed;
+    right: 1rem;
+    top: 60px;
+    height: 0;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1001;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-height: 0;
+}
+
+.dropdownMenu.open {
+    display: none;
+    max-height: 200px;
+}
+
+/* TRANSITION FOR THE MENU BUTTON WHEN OPEN */
+.menuBtn.open img {
+    transform: rotate(90deg);
+}
+
+.dropdownMenu.open {
+    height: 135px;
+}
+
+.dropdownMenu li a {
+    padding: 0.7rem;
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownMenu li a:hover {
+    color: #facc15;
+}
+
+/*--About--*/
+#about {
+    padding: 40px 20px;
+    color: white;
+    text-align: left;
+    background-color: #281313;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+#about .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #3b2424;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+#about .about-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#about .about-text h2 {
+    padding-bottom: 20px;
+    font-size: 36px;
+    color: #fafafa;
+    margin: 0 0 20px 0;
+}
+
+#about .about-text h2::after {
+    content: '';
+    display: block;
+    width: 1030px;
+    height: 5px;
+    background-color: #facc15;
+    position: absolute;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+}
+
+#about .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+#about img {
+    margin-top: 60px;
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* CONTACTS */
+footer {
+    min-height: 100px;
+    width: 100%;
+    background-color: #281313;
+    color: white;
+    padding: 20px 0;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+footer .container {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    background-color: #3b2424;
+    padding: 30px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+footer .contacts h3 {
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+footer .contacts h3::after {
+    content: '';
+    display: block;
+    width: 1000px;
+    height: 5px;
+    background-color: #facc15;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+footer .contacts .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer .contacts .contact-item {
+    background-color: #281313;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    width: 100%;
+}
+
+footer .contacts .contact-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+footer .contacts .contact-item p {
+    margin: 5px 0;
+}
+
+.social-links h4 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-links p {
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.social-links a {
+    color: #facc15;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.social-link:hover .social-icon {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+

@@ -1,0 +1,406 @@
+/* The desktop-first pre-defined media queries: */
+@media (max-width: 1536px) {
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh; 
+        padding: 0 20px; 
+    }
+
+    .banner-text h1 {
+        font-size: 60px; 
+    }
+    
+    .banner-text p {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    .banner-btn {
+        margin: 70px auto 0;
+    }
+
+    .banner-btn a {
+        width: 500px;
+        margin: 0 10px;
+        padding: 12px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1280px) {
+    #about .container {
+        max-width: 1000px;
+    }
+
+    #about .about-text h2::after {
+        width: 950px;
+    }
+
+    #about .about-text p {
+        font-size: 15px;
+    }
+
+    footer .container {
+        max-width: 1000px;
+    }
+
+    footer .contacts h3::after {
+        width: 940px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        margin-left: auto;
+    }
+    
+    .navbar .logo-text {
+        color: #facc15;
+        font-size: 12px;
+        margin-right: auto;
+    }
+    
+    nav .logo-text strong {
+        font-size: 15px;
+    }
+
+    .menuBtn, .menuBtn img {
+        display: block;
+    }
+
+    .navbar button, .navlist {
+        display: none;
+    }
+
+    .banner-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        padding: 0 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 50px;
+    }
+    
+    .banner-text p {
+        font-size: 15px;
+        margin: 15px 0;
+    }
+
+    .banner-btn a {
+        width: auto;
+        padding: 15px 40px;
+        text-align: center;
+    }  
+    
+    .dropdownMenu, .dropdownMenu.open {
+        display: block;
+    }
+
+    #about .container {
+        max-width: 900px;
+    }
+
+    #about .about-text h2::after {
+        width: 845px;
+    }
+
+    #about .about-text p {
+        font-size: 14px;
+    }
+
+    footer .container {
+        max-width: 900px;
+    }
+
+    footer .contacts h3::after {
+        width: 840px;
+    }
+}
+
+@media (max-width: 935px) {
+    #about .container {
+        max-width: 800px;
+    }
+
+    #about .about-text h2::after {
+        width: 745px;
+    }
+
+    #about .about-text p {
+        font-size: 13px;
+    }
+
+    footer .container {
+        max-width: 800px;
+    }
+
+    footer .contacts h3::after {
+        width: 740px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-item {
+        margin-bottom: 20px; 
+        text-align: center;  
+    }
+    
+    .social-links {
+        justify-content: center; 
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 846px) {
+    #about .container {
+        max-width: 700px;
+        flex-direction: column;
+    }
+
+    #about .about-text h2::after {
+        width: 635px;
+    }
+
+    #about .about-text p {
+        font-size: 13px;
+    }
+
+    #about img {
+        width: 550px;
+    }
+
+    footer .container {
+        max-width: 700px;
+    }
+
+    footer .contacts h3::after {
+        width: 630px;
+    }
+}
+
+@media (max-width: 745px) {
+    .dropdownMenu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .banner-btn a {
+        width: auto;
+        padding: 15px 45px;
+    } 
+
+    .banner-text h1 {
+        font-size: 40px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+
+    #about .container {
+        max-width: 600px;
+    }
+
+    #about .about-text h2::after {
+        width: 535px;
+    }
+
+    #about .about-text p {
+        font-size: 13px;
+    }
+
+    #about img {
+        width: 500px;
+    }
+
+    footer .container {
+        max-width: 600px;
+    }
+
+    footer .contacts h3::after {
+        width: 530px;
+    }
+}
+
+@media (max-width: 640px) {
+    .banner-btn a {
+        width: auto;
+        padding: 15px 40px;
+    } 
+
+    .banner-text h1 {
+        font-size: 35px;
+    }
+
+    .banner-text p {
+        font-size: 12px;
+    }
+
+    #about .container {
+        max-width: 500px;
+    }
+
+    #about .about-text h2::after {
+        width: 435px;
+    }
+
+    #about .about-text p {
+        font-size: 12px;
+    }
+
+    #about img {
+        width: 430px;
+    }
+
+    footer .container {
+        max-width: 500px;
+    }
+
+    footer .contacts h3::after {
+        width: 430px;
+    }
+
+    footer .contacts .contact-info {
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    footer .contacts .contact-item {
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-icon {
+        width: 30px; 
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    .contact-item {
+        font-size: 14px;
+    }
+
+    .social-links h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 530px) {
+    .navbar .logo-text {
+        font-size: 10px;
+    }
+
+    #about .container {
+        max-width: 400px;
+    }
+
+    #about .about-text h2::after {
+        width: 300px;
+    }
+
+    #about .about-text p {
+        font-size: 12px;
+    }
+
+    #about img {
+        width: 330px;
+    }
+
+    footer .container {
+        max-width: 400px;
+    }
+
+    footer .contacts h3::after {
+        width: 330px;
+    }
+
+    footer .contacts .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    footer .contacts .contact-item {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 435px) {
+    .navbar .logo-text {
+        font-size: 7px;
+    }
+
+    .banner-text h1 {
+        font-size: 28px;
+    }
+    
+    .banner-text p {
+        font-size: 9px;
+    }
+    
+    .banner-btn a {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    #about .container {
+        max-width: 300px;
+    }
+
+    #about .about-text h2::after {
+        width: 240px;
+    }
+
+    #about .about-text p {
+        font-size: 12px;
+    }
+
+    #about img {
+        width: 270px;
+        height: 270px;
+    }
+
+    footer .container {
+        max-width: 300px;
+    }
+
+    footer .contacts h3::after {
+        width: 230px;
+    }
+    
+    footer .contacts .contact-item {
+        max-width: 270px;
+    }
+
+    .social-links p a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 380px) {
+    .banner-text p {
+        font-size: 8px;
+    }
+}
