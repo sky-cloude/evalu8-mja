@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #281313;
+}
+
+header{
+    position: relative;
+    width: 920px;
+    margin: 15px 50px;
+}
+
+.school-name{
+    display: flex;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header img{
+    height: 100px;
+    width: 100px;
+}
+
+header h1{
+    color: #fff;
+    margin: 25px 20px;
+}
+
+.container{
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+
+.login-form{
+    padding: 20px;
+    text-align: center;
+    background-color: #654a4a;
+    height: 430px;
+    border-radius: 15px;
+}
+
+.login-image {
+    width: 500px;
+    height: 500px;
+}
+
+.form-title {
+    margin: 30px 50px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+input{
+    width: 90%;
+    font-size: 15px;    
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px 10px 30px;
+    font-size: large;
+}
+
+input:focus{
+    outline: none;
+}
+
+.input-group {
+    position: relative;
+    padding: 3% 0;
+}
+
+.input-group i {
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 13px;
+}
+
+.password-group {
+    position: relative;
+}
+
+.password-group input {
+    padding-right: 40px; /* Space for the eye icon */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+
+.login-button{
+    position: relative;
+    align-items: center;
+    width: 90%;
+    padding: 10px 0px 10px 0;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 10px;
+    background-color: #facc15;
+    border: none;
+    margin-top: 13px;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.login-button:hover{
+    scale: 1.05;
+}
+
+.login-button:active{
+    scale: 0.95;
+}
+
+.forgot-pass{
+    text-decoration: none;
+    color: #facc15;
+    font-weight: bolder;
+    display: block;
+    font-size: larger;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.forgot-pass-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.forgot-pass-form-container{
+    background-color: #654a4a;
+    border-radius: 10px;
+    width: 450px;
+}
+.search-form-container,
+.change-pass-form-container{
+    background-color: #654a4a;
+    border-radius: 10px;
+    width: 450px;
+    display: none;
+}
+
+.forgot-pass-header{
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.forgot-pass-input,
+.code-input,
+.change-pass-input{
+    padding: 15px 25px 30px 25px;
+    border-top: 2px solid #facc15;
+    border-bottom: 2px solid #facc15;
+}
+
+.forgot-pass-input,
+.code-input,
+.change-pass-input p{
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.enter-code-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.enter-code {
+    width: 70%;
+}
+
+.forgot-pass-button{
+    padding: 15px 0px 25px 0px;
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-pass-button .resend {
+    margin-right: 100px;
+    cursor: pointer;
+    color: #facc15;
+    font-weight: bold;
+}
+
+.forgot-pass-button button {
+    color: #492525;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-left: 20px;  
+}
+
+.left-button {
+    background-color: #d4c0c0;
+}
+
+.right-button {
+    background-color: #facc15;
+}
+
+
+@media (max-width: 992px) {
+    header {
+        transition: width 0.3s ease, margin 0.3s ease; /* Transition width and margin */
+        width: 600px;
+        margin: 15px 0px -40px 20px;
+    }
+
+    header img {
+        transition: height 0.3s ease, width 0.3s ease, margin 0.3s ease, font-size 0.3s ease; /* Transition height, width, margin, and font-size */
+        height: 90px;
+        width: 90px;
+    }
+    
+    header h1 {
+        transition: color 0.3s ease, margin 0.3s ease, font-size 0.3s ease; /* Transition color, margin, and font-size */
+        color: #fff;
+        margin: 25px 20px;
+        font-size: 25px;
+    }
+
+    .container {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .login-image {
+        order: -1; 
+        margin-bottom: -50px; 
+        height: 500px;
+        width: 500px;
+        transition: color 0.3s ease, margin 0.3s ease;
+    }
+
+    .login-form {
+        height: auto;
+        padding: 10px; 
+        margin-bottom: 30px;
+        transition: color 0.3s ease, margin 0.3s ease, font-size 0.3s ease; /* Smooth transition for padding */
+    }
+
+    .forgot-pass-form-container{
+        width: 380px;
+    }
+    .search-form-container,
+    .change-pass-form-container{
+        width: 380px;
+    }
+
+    .forgot-pass-input,
+    .code-input,
+    .change-pass-input p{
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 15px;
+    }
+
+    .forgot-pass-button .resend {
+        margin-right: 30px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        transition: width 0.3s ease, margin 0.3s ease; /* Transition width and margin */
+        width: 400px;
+        margin: 15px 0px -30px 20px;
+    }
+
+    header img {
+        transition: height 0.3s ease, width 0.3s ease, margin 0.3s ease, font-size 0.3s ease; /* Transition height, width, margin, and font-size */
+        height: 70px;
+        width: 70px;
+    }
+    
+    header h1 {
+        transition: color 0.3s ease, margin 0.3s ease, font-size 0.3s ease; /* Transition color, margin, and font-size */
+        color: #fff;
+        margin: 20px 15px;
+        font-size: 25px;
+    }
+
+    .login-image {
+        transition: margin-bottom 0.3s ease, height 0.3s ease, width 0.3s ease; /* Transition margin-bottom, height, and width */
+        order: -1;
+        margin-bottom: -50px; 
+        height: 400px;
+        width: 400px;
+    }
+
+    .login-form {
+        transition: height 0.3s ease, padding 0.3s ease, margin-bottom 0.3s ease; /* Transition height, padding, and margin-bottom */
+        height: 300px; 
+        padding: 5px; 
+        margin-bottom: 5px;
+    }
+
+    .form-title {
+        transition: font-size 0.3s ease; /* Transition font-size */
+        font-size: 20px;
+    }
+
+    input {
+        transition: padding 0.3s ease, font-size 0.3s ease; /* Transition padding and font-size */
+        padding: 8px 0px 8px 30px; 
+        font-size: 14px; 
+    }
+
+    .login-button {
+        transition: padding 0.3s ease, font-size 0.3s ease; /* Transition padding and font-size */
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .forgot-pass {
+        transition: font-size 0.3s ease, margin-top 0.3s ease; /* Transition font-size and margin-top */
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .input-group i {
+        transition: margin-left 0.3s ease, margin-top 0.3s ease, font-size 0.3s ease; /* Transition margin-left, margin-top, and font-size */
+        position: absolute;
+        margin-left: 13px;
+        margin-top: 10px;
+        font-size: small;
+    }
+
+    .forgot-pass-button .resend {
+        margin-right: 20px;
+        font-size: small;
+        font-weight: bolder;
+    }
+
+    .forgot-pass-button button {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .forgot-pass-header{
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .forgot-pass-input,
+    .code-input,
+    .change-pass-input p{
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: small;
+    }
+}
+
+
+
