@@ -1,0 +1,75 @@
+/* Base state of the button */
+.container .buttonContainer .custom-dark-brown-btn {
+    background-color: #281313;
+    color: white;
+    border: none; /* Optional: Removes border for a cleaner look */
+    height: 35px; 
+    font-size: small;
+}
+
+/* Hover effect for the button */
+.admin-dashboard .buttonContainer .custom-dark-brown-btn:hover {
+    background-color: rgba(40, 19, 19, 0.75) !important; /* Ensure hover background color is applied */
+    color: white;
+}
+
+/* Table Styles */
+.admin-dashboard .table-container,
+.admin-dashboard .table-bordered,
+.admin-dashboard #searchInput {
+    border: 1px solid black;
+    padding-left: 10px;
+    text-indent: 10px;  /* Adjust to move placeholder text */
+}
+
+.admin-dashboard .table-container .table-bordered {
+    border: 1px solid #281313;
+}
+
+.admin-dashboard .table-bordered th,
+.admin-dashboard .table-bordered td {
+    border: 1px solid #281313;
+}
+
+/* Additional Styles for Admin Dashboard */
+.admin-dashboard .container {
+    margin: 20px;
+}
+
+.admin-dashboard .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.admin-dashboard .content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.admin-dashboard .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Table Header Style */
+.admin-dashboard .table-bordered th {
+    background-color: #281313;
+    color: white;
+    text-align: left;
+}
+
+/* Search Input Style */
+.admin-dashboard #searchInput {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
